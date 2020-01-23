@@ -23,5 +23,8 @@ SELECT * FROM cliente WHERE id_cliente = 1
 SELECT * FROM cliente c WHERE c.status = 'Ativo'
 SELECT * FROM cliente WHERE idade_cliente = 25 
 
+INSERT INTO cliente (nome_cliente, idade_cliente, email_cliente, status) VALUES ('Carlos', 34, 'carlos@mail.com', 'Inativo')
 
-INSERT INTO cliente (nome_cliente, idade_cliente, email_cliente) VALUES ('Carlos', 34, 'carlos@mail.com', 'Inativo')
+DELETE FROM cliente WHERE id_cliente > 1
+DELETE FROM cliente WHERE idade_cliente = 34
+DELETE FROM cliente WHERE status = 'Inativo'
