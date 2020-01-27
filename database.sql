@@ -49,3 +49,9 @@ SELECT * FROM cliente WHERE first_name LIKE '%tt%'
 SELECT * FROM cliente WHERE email IS null
 SELECT * FROM cliente WHERE email IS not null
 
+--Database: usuarios, Table: usuario--
+--Padrão de data (yyy-mm-dd)
+INSERTO INTO usuario (nome, data_nascimento)
+SELECT * FROM usuario WHERE data_nascimento < ('1998/01/01')
+SELECT * FROM usuario WHERE data_nascimento > ('1998/01/01')
+SELECT * FROM usuario WHERE data_nascimento BETWEEN ('1998/01/01') AND ('2005/01/01')
