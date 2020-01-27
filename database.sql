@@ -38,3 +38,14 @@ SELECT * FROM cliente WHERE id in (8, 15, 25)
 
 SELECT * FROM cliente WHERE first_name = 'Ricardo' OR first_name = 'Shane'
 SELECT * FROM cliente WHERE id = 3 AND first_name = 'Corly' OR first_name = 'Ricardo'
+
+
+--Não é case sensitive--
+SELECT * FROM cliente WHERE first_name LIKE 'Ga%'
+SELECT * FROM cliente WHERE first_name LIKE '%ne'
+SELECT * FROM cliente WHERE first_name LIKE '%tt%'
+
+
+SELECT * FROM cliente WHERE email IS null
+SELECT * FROM cliente WHERE email IS not null
+
