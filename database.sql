@@ -35,3 +35,6 @@ DELETE FROM cliente WHERE status = 'Inativo'
 --Database: db_filtro, Table: cliente
 SELECT * FROM cliente WHERE first_name in ('Gaby', 'Shane', 'Ad')
 SELECT * FROM cliente WHERE id in (8, 15, 25)
+
+SELECT * FROM cliente WHERE first_name = 'Ricardo' OR first_name = 'Shane'
+SELECT * FROM cliente WHERE id = 3 AND first_name = 'Corly' OR first_name = 'Ricardo'
